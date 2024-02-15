@@ -76,8 +76,10 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget buildInitialInput() => SingleChildScrollView(
     child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-           ImageBuilder(imagePath: loginImages[1]),
+     //      ImageBuilder(imagePath: loginImages[1]),
         const TextData(message: "User"),
         HeightSpacer(myHeight: kSpacing),
         InputField(
@@ -100,7 +102,7 @@ class _LoginPageState extends State<LoginPage> {
           password: password,
         ),
         HeightSpacer(myHeight: kSpacing),
-        const SocialSignIn(),
+        //const SocialSignIn(),
       ],
     ),
   );
